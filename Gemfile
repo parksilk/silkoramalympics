@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
 gem 'jquery-rails'
+gem 'purecss'
+gem 'normalize-rails'
 
 group :production do
   gem 'pg'
