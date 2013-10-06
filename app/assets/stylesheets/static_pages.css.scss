@@ -1,10 +1,10 @@
 body {
   font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 18px;
   padding-top: 50px;
 }
 
 .container {
-  font-size: 18px;
   background-color: #5AC6FF;
   color: #555E66;
   margin: 0 40px;
@@ -29,6 +29,7 @@ body {
 
 .l-box {
   font-family: 'PT Sans Narrow', sans-serif;
+  line-height: 110%;
   padding: 0 10px;
   border-left: 1px solid gray;
 }
