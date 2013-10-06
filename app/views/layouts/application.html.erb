@@ -10,13 +10,10 @@
 
 <body>
   <%= render 'layouts/header' %>
-
-  <div class="pure-g-r">
-    <div class="pure-u-1-2">
-      <%= yield %> 
-      <%= render 'layouts/footer' %>
-    </div>
+  
+  <div class="container">
+    <%= yield %> 
+    <%= render 'layouts/footer' %>
   </div>
-
 </body>
 </html>
