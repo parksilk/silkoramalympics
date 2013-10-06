@@ -1,8 +1,19 @@
 body {
+  font-family: 'PT Sans Narrow', sans-serif;
   padding-top: 50px;
 }
 
+.container {
+  font-size: 18px;
+  background-color: #5AC6FF;
+  color: #555E66;
+  margin: 0 40px;
+  padding: 5px 30px 10px 30px;
+  border-radius: 5px;
+}
+
 .footer {
+  font-family: 'PT Sans Narrow', sans-serif;
   width: 100%;
   margin-top: 40px;
   border-top: 1px solid gray;
@@ -17,17 +28,11 @@ body {
 }
 
 .l-box {
-    padding: 0 10px;
-    border-left: 1px solid gray;
+  font-family: 'PT Sans Narrow', sans-serif;
+  padding: 0 10px;
+  border-left: 1px solid gray;
 }
 
-.container {
-  background-color: #5AC6FF;
-  color: #555E66;
-  margin: 0 40px;
-  padding: 5px 30px 10px 30px;
-  border-radius: 5px;
-}
 
 // apple blue:    5AC6FF
 // apple green:   90EE90
