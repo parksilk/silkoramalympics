@@ -34,6 +34,11 @@ body {
   border-radius: 5px;
 }
 
+// apple blue:    5AC6FF
+// apple green:   90EE90
+// apple pink:    FF8282
+// apple yellow:  FDEB75
+
 .footer {
   font-family: 'PT Sans Narrow', sans-serif;
   width: 100%;
@@ -56,12 +61,55 @@ body {
   border-left: 1px solid gray;
 }
 
-// apple blue:    5AC6FF
-// apple green:   90EE90
-// apple pink:    FF8282
-// apple yellow:  FDEB75
+.center {
+  text-align: center;
+}
+
+// BUTTONS //
+
+.pure-button-warning {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.pure-button-xsmall {
+  font-size: 70%;
+}
+
+.pure-button-small {
+  font-size: 85%;
+}
+
+.pure-button-large {
+  font-size: 110%;
+}
+
+.pure-button-xlarge {
+  font-size: 125%;
+}
 
 
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// ALERTS //
+
+.alert {
+  text-align: center;
+}
+
+.alert-alert {
+  // ex: telling you you're already signed in
+  color: #FDEB75;
+  border: 1px solid #FDEB75;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.alert-notice {
+  // ex: when signed out successfully
+  color: #90EE90;
+  border: 1px solid #90EE90;
+  border-radius: 5px;
+  padding: 10px 0;
+
+}

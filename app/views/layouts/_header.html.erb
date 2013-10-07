@@ -4,23 +4,24 @@
         <ul>
           <li><%= link_to image_tag('olympics_rings_logo.png'), root_path,
                   id: "logo" %></li>
-          <li><%= link_to '2013 Schedule', schedule_path %></li>
-          <% if signed_in? %>
-            <li><%= link_to "Stats", "#" %></li>
+          <% if user_signed_in? %>
+            <li><%= link_to '2013 Schedule', schedule_path %></li>
+            <li><%= link_to 'Teams', "#" %></li>
             <li class="pure-menu-can-have-children pure-menu-has-children">
-              <a href="#" data-toggle="dropdown">Account <span class="pure-custom-caret"></span></a>
+              <a href="#" data-toggle="dropdown">My Account <span class="pure-custom-caret"></span></a>
               <ul class="pure-menu-children">
                 <li><%= link_to "Profile", "#" %></li>
-                <li><%= link_to "Settings", "#" %></li>
+                <li><%= link_to "Settings", edit_user_registration_path %></li>
                 <li class="pure-menu-separator"></li>
                 <li>
-                  <%= link_to "Sign Out", "#", method: "delete" %>
+                  <%= link_to "Sign Out", destroy_user_session_path,
+                      method: "delete" %>
                 </li>
               </ul>
             </li>
           <% else %>
-            <li><%= link_to "Sign Up", "#" %></li>
-            <li><%= link_to "Sign In", "#" %></li>
+            <li><%= link_to "Sign Up", new_user_registration_path %></li>
+            <li><%= link_to "Login", new_user_session_path %></li>
           <% end %>
         </ul>
       </div>
