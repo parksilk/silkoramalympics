@@ -95,20 +95,21 @@ body {
 
 .alert {
   text-align: center;
+  font-size: 24px;
 }
 
 .alert-alert {
   // ex: telling you you're already signed in
-  color: #FDEB75;
-  border: 1px solid #FDEB75;
+  color: #FDEB75; // yellow
+  border: 1px solid #FDEB75; // yellow
   border-radius: 5px;
   padding: 10px 0;
 }
 
 .alert-notice {
   // ex: when signed out successfully
-  color: #90EE90;
-  border: 1px solid #90EE90;
+  color: #90EE90; // green
+  border: 1px solid #90EE90; // green
   border-radius: 5px;
   padding: 10px 0;
 
