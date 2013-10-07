@@ -12,4 +12,5 @@
  *= require normalize-rails
  *= require_tree .
  *= require purecss
+ *= require purecss-addons
  */
