@@ -1,13 +1,18 @@
 body {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 18px;
-  padding-top: 50px;
+  padding-top: 60px;
+  // padding-top: 10px;
 }
 
 .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 80%;
+  overflow: auto;
+  word-wrap: break-word;
   background-color: #5AC6FF;
   color: #555E66;
-  margin: 0 40px;
   padding: 5px 30px 10px 30px;
   border-radius: 5px;
 }
@@ -34,6 +39,10 @@ body {
   border-left: 1px solid gray;
 }
 
+.pure-menu-pull-right {
+  position: absolute;
+  right: 0;
+}
 
 // apple blue:    5AC6FF
 // apple green:   90EE90

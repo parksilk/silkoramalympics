@@ -1,6 +1,6 @@
 module ApplicationHelper
 
   def signed_in?
-    false    
+    true    
   end
 end

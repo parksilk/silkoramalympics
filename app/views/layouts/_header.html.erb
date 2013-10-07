@@ -5,8 +5,8 @@
           <li><%= link_to 'Home', root_path %></li>
           <li><%= link_to '2013 Schedule', schedule_path %></li>
           <% if signed_in? %>
-            <li class='pure-menu-disabled'><%= link_to "Users", "#" %></li>
-            <li class='pure-menu-disabled' class="pure-menu-can-have-children pure-menu-has-children">
+            <li><%= link_to "Stats", "#" %></li>
+            <li class="pure-menu-can-have-children pure-menu-has-children">
               <a href="#" data-toggle="dropdown">Account <span class="pure-custom-caret"></span></a>
               <ul class="pure-menu-children">
                 <li><%= link_to "Profile", "#" %></li>
