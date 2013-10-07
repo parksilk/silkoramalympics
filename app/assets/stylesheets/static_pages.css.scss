@@ -65,6 +65,11 @@ body {
   text-align: center;
 }
 
+.cancel-link {
+  text-decoration: none;
+  color: red;
+}
+
 // BUTTONS // these aren't working for some reason #bugbug
 
 .pure-button-warning {
@@ -127,6 +132,7 @@ body {
 
 .simple_form .error {
   clear: left;
+  margin-left: 200px;
   font-size: 14px;
   color: #D00;
   display: block;
