@@ -1,17 +1,12 @@
 <h2>Login</h2>
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name),
+<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name),
              html: { class: "pure-form pure-form-stacked" }) do |f| %>
   
-  <div>
-    <%= f.label :email %>
-    <%= f.email_field :email, :autofocus => true %>
-  </div>
+  <%= f.error_notification %>
 
-  <div>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-  </div>
+  <%= f.input :email, autofocus: true %>
+  <%= f.input :password %>
 
   <% if devise_mapping.rememberable? -%>
     <div>
@@ -20,8 +15,8 @@
     </div>
   <% end -%>
   <div>
-    <%= f.submit "Login", class: "pure-button pure-button-small" %>
+    <%= f.submit "Login", class: "pure-button" %>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<%#= render "devise/shared/links" %>

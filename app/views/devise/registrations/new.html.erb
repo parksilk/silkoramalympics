@@ -1,24 +1,16 @@
 <h2>Sign up</h2>
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name),
-             html: { class: "pure-form pure-form-stacked" }) do |f| %>
+<%= simple_form_for(resource, :as => resource_name,
+                    url: registration_path(resource_name),
+                    html: { class: "pure-form pure-form-stacked" }) do |f| %>
   
-  <%= devise_error_messages! %>
+  <%= f.error_notification %>
 
-  <div>
-    <%= f.label :email %>
-    <%= f.email_field :email, :autofocus => true %>
-  </div>
-
-  <div>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-  </div>
-
-  <div>
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation %>
-  </div>
+  <%= f.input :email, autofocus: true %>
+  <%= f.input :password %>
+  <%= f.input :password_confirmation %>
 
   <div><%= f.submit "Sign up", class: "pure-button" %></div>
 <% end %>
+
+<%= render "devise/shared/links" %>
