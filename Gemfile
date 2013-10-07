@@ -4,6 +4,7 @@ gem 'rails', '3.2.14'
 gem 'jquery-rails'
 gem 'purecss'
 gem 'normalize-rails'
+gem 'devise'
 
 group :production do
   gem 'pg'
