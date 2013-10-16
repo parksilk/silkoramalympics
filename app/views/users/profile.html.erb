@@ -1,11 +1,17 @@
 <h1 class="center">
-  <%= @user.name_first %>'s Silkoramalympics Profile.
+  <%= gravatar_for(@user, 100) %><br>
+  <%= @user_full_name %>
 </h1>
 
-<h1>
-  <%#= gravatar_for @user %>
-  <%#= @user.name %>
-</h1>
+<p>
+  User ID: <%= @user.id %>
+</p>
 
-Full name: <%= @first_name %> <%= @last_name %>
-
+<p>
+  Admin:
+    <% if @user.admin? %>
+      yes
+    <% else %>
+      no
+    <% end %>
+</p>

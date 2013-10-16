@@ -7,7 +7,7 @@
 
   <%= f.input :name_first, label: "First name", autofocus: true %>
   <%= f.input :name_last,  label: "Last name" %>
-  <%= f.input :email %>
+  <%= f.input :email, label: "Email (sets your avatar using gravatar.com)" %>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>

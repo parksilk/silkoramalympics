@@ -1,4 +1,5 @@
 Silkoramalympics::Application.routes.draw do
+  resources :users
 
   devise_for :users
 
@@ -6,6 +7,7 @@ Silkoramalympics::Application.routes.draw do
 
   get 'schedule' => 'static_pages#schedule'
   get 'profile'  => 'users#profile'
+  get 'players'  => 'users#players'
 
 
   # The priority is based upon order of creation:
