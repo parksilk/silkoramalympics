@@ -1,13 +1,11 @@
 Silkoramalympics::Application.routes.draw do
-  resources :users
 
   devise_for :users
 
   root :to => 'static_pages#home'
 
   get 'schedule' => 'static_pages#schedule'
-  get 'profile'  => 'users#profile'
-  get 'players'  => 'users#players'
+  get 'profile'  => 'static_pages#profile'
 
 
   # The priority is based upon order of creation:
