@@ -1,0 +1,18 @@
+<h1 class="center">Players</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= gravatar_for(user, size = 40) %></td>
+      <td><%= user.name_first %></td>
+      <td><%= user.email %></td>
+      <td><% if current_user.admin? %> | (admin delete link goes here)
+      <% end %></td>
+    </tr>
+  <% end %>
+</table>

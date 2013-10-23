@@ -5,7 +5,8 @@ Silkoramalympics::Application.routes.draw do
   root :to => 'static_pages#home'
 
   get 'schedule' => 'static_pages#schedule'
-  get 'profile'  => 'static_pages#profile'
+  get 'profile'  => 'users#profile'
+  get 'players'  => 'users#players'
 
 
   # The priority is based upon order of creation:

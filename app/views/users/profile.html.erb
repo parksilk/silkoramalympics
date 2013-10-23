@@ -1,0 +1,17 @@
+<h1 class="center">
+  <%= gravatar_for(@current_user, 100) %><br>
+  <%= @current_user.name_first %> <%= @current_user.name_last %>
+</h1>
+
+<p>
+  User ID: <%= current_user.id %>
+</p>
+
+<p>
+  Admin:
+    <% if current_user.admin? %>
+      yes
+    <% else %>
+      no
+    <% end %>
+</p>
