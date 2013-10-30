@@ -6,6 +6,7 @@ gem 'purecss'
 gem 'normalize-rails'
 gem 'devise'
 gem 'simple_form'
+gem 'figaro'
 
 group :production do
   gem 'pg'

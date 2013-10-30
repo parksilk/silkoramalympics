@@ -6,7 +6,7 @@
                   id: "logo" %></li>
           <li class="pure-menu-custom-separator-vertical"</li>
           <% if user_signed_in? %>
-            <li><%= link_to '2013 Schedule', schedule_path %></li>
+            <li><%= link_to 'The Schedule', schedule_path %></li>
             <li><%= link_to 'The Players', players_path %></li>
             <li class="pure-menu-can-have-children pure-menu-has-children">
               <a href="#" data-toggle="dropdown">My Account <span class="pure-custom-caret"></span></a>
@@ -21,7 +21,7 @@
               </ul>
             </li>
           <% else %>
-            <li class="pure-custom-pull-right"><%= link_to "Login", new_user_session_path %></li>
+            <li><%= link_to "Login", new_user_session_path %></li>
             <li><%= link_to "Sign Up", new_user_registration_path %></li>
           <% end %>
         </ul>

@@ -65,7 +65,17 @@ Silkoramalympics::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  # This is for email reminders. In production, it should be set to the actual
-  # host of your application.
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  # Code for providing emails for password resets
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: ENV["GMAIL_DOMAIN"],
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: ENV["GMAIL_USERNAME"],
+    password:  ENV["GMAIL_PASSWORD"]
+  }
+  
+  config.action_mailer.default_url_options = { :host => 'silkoramalympics.herokuapp.com' }
 end

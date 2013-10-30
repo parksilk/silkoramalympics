@@ -8,10 +8,14 @@
 </p>
 
 <p>
-  Admin:
-    <% if current_user.admin? %>
-      yes
-    <% else %>
-      no
-    <% end %>
+  <% if current_user.admin? %>
+    Admin: yes
+  <% else %>
+  <% end %>
+</p>
+
+<p>
+  <% if user_signed_in? %>
+    <%= link_to "Edit your account", edit_user_registration_path %>
+  <% end %>
 </p>

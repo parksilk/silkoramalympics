@@ -8,6 +8,5 @@ class StaticPagesController < ApplicationController
 
   def profile
     redirect_to root_path unless user_signed_in?    
-    @current_user = current_user
   end
 end
