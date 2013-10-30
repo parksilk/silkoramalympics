@@ -77,5 +77,5 @@ Silkoramalympics::Application.configure do
     password:  ENV["GMAIL_PASSWORD"]
   }
   
-  config.action_mailer.default_url_options = { :host => 'silkoramalympics.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'silkoramalympics.com' }
 end
