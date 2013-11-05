@@ -5,6 +5,10 @@ body {
   // padding-top: 10px;
 }
 
+.big-text {
+  font-size: 400%;
+}
+
 .pure-menu {
   padding-top: 5px;
   ul {
@@ -39,8 +43,19 @@ body {
 // apple pink:    FF8282; // pink
 // apple yellow:  FDEB75; // yellow
 
+.header {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 18px;
+}
+
+.hero-text {
+  font-size: 24px;
+  line-height: 115%;
+}
+
 .footer {
   font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 18px;
   width: 100%;
   margin-top: 40px;
   border-top: 1px solid gray;
@@ -104,7 +119,7 @@ body {
 }
 
 .alert-alert {
-  // ex: telling you you're already signed in
+  // ex: telling you youre already signed in
   color: #FDEB75; // yellow
   border: 1px solid #FDEB75; // yellow
   border-radius: 5px;
@@ -145,3 +160,4 @@ body {
   display: block;
   font-style: italic;
 }
+
