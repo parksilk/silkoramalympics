@@ -1,1 +1,4 @@
-<%= render 'profile' %>
+<h1 class="center big-text">
+  <%= gravatar_for(@user, 100) %><br>
+  <%= @user.name_first %> <%= @user.name_last %>
+</h1>

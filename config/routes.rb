@@ -4,9 +4,11 @@ Silkoramalympics::Application.routes.draw do
 
   root :to => 'static_pages#home'
 
-  get 'schedule' => 'static_pages#schedule'
-  get 'profile'  => 'users#profile'
-  get 'players'  => 'users#players'
+  match '/users/:id', :to => 'users#show', :as => :user
+
+  match '/schedule', to: 'static_pages#schedule'
+  match '/profile',  to: 'users#profile'
+  match '/players',  to: 'users#players'
 
 
   # The priority is based upon order of creation:
