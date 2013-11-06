@@ -10,8 +10,10 @@
     <tr>
       <td><%= link_to gravatar_for(user, size = 40), user_path(user) %></td>
       <td><%= user.name_first %></td>
-      <td>| <%= user.email %></td>
-      <td><% if current_user.admin? %> | <%= link_to "Delete", destroy_user_path(user), class: "red-link", :method => :delete, :confirm => "Are you sure?" %></td>
+      <td>> <%= user.email %></td>
+      <td><% if current_user.admin? %> | <%= link_to "Delete",
+                destroy_user_path(user), class: "red-link", :method => :delete,
+                :confirm => "Are you sure?" %></td>
     <% end %>
     </tr>
   <% end %>
