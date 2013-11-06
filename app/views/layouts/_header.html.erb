@@ -19,6 +19,9 @@
                       method: "delete" %>
                 </li>
               </ul>
+              <% if current_user.admin? %>
+                <li class="admin-header">ADMIN ACCOUNT</li>
+              <% end %>
             </li>
           <% else %>
             <li><%= link_to "Login", new_user_session_path %></li>

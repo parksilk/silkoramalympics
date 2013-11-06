@@ -3,12 +3,6 @@
   <%= @current_user.name_first %> <%= @current_user.name_last %>
 </h1>
 
-<p>
-  <% if current_user.admin? %>
-    Admin: yes
-  <% else %>
-  <% end %>
-</p>
 
 <p>
   <% if user_signed_in? %>
