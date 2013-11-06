@@ -2,3 +2,9 @@
   <%= gravatar_for(@user, 100) %><br>
   <%= @user.name_first %> <%= @user.name_last %>
 </h1>
+
+<p>
+  <% if user_signed_in? and @user == current_user %>
+    <%= link_to "Edit your account", edit_user_registration_path %>
+  <% end %>
+</p>

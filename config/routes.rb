@@ -1,14 +1,16 @@
 Silkoramalympics::Application.routes.draw do
 
   devise_for :users
+  resources  :users
 
   root :to => 'static_pages#home'
 
-  match '/users/:id', :to => 'users#show', :as => :user
+  match '/users/:id', :to => 'users#show',    :as => :user
+  match '/users/:id', :to => 'users#destroy', :as => :destroy_user, :via => :delete
 
-  match '/schedule', to: 'static_pages#schedule'
-  match '/profile',  to: 'users#profile'
-  match '/players',  to: 'users#players'
+  match '/schedule', :to => 'static_pages#schedule'
+  match '/profile',  :to => 'users#profile'
+  match '/players',  :to => 'users#players'
 
 
   # The priority is based upon order of creation:

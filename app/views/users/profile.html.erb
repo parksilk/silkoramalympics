@@ -1,8 +1,7 @@
 <h1 class="center big-text">
-  <%= gravatar_for(@current_user, 100) %><br>
-  <%= @current_user.name_first %> <%= @current_user.name_last %>
+  <%= gravatar_for(current_user, 100) %><br>
+  <%= current_user.name_first %> <%= current_user.name_last %>
 </h1>
-
 
 <p>
   <% if user_signed_in? %>

@@ -20,7 +20,7 @@
                 </li>
               </ul>
               <% if current_user.admin? %>
-                <li class="admin-header">ADMIN ACCOUNT</li>
+                <li class="admin-header">ADMIN ACCOUNT (<%= current_user.name_first %>)</li>
               <% end %>
             </li>
           <% else %>
