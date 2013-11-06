@@ -7,6 +7,7 @@ body {
 
 .big-text {
   font-size: 400%;
+  line-height: 100%;
 }
 
 .pure-menu {
@@ -28,6 +29,7 @@ body {
 
 .container {
   max-width: 1000px;
+  // line-height: 100%;
   margin: 0 auto;
   width: 80%;
   overflow: auto;
@@ -83,6 +85,11 @@ body {
 .red-link {
   text-decoration: none;
   color: red;
+}
+
+.yellow-link {
+  text-decoration: none;
+  color: yellow;
 }
 
 .admin-header {
