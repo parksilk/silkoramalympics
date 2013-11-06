@@ -8,8 +8,9 @@
           <% if user_signed_in? %>
             <li><%= link_to 'The Schedule', schedule_path %></li>
             <li><%= link_to 'The Players', players_path %></li>
+            <li><%= link_to 'The Talk (coming)', '#' %></li>
             <li class="pure-menu-can-have-children pure-menu-has-children">
-              <a href="#" data-toggle="dropdown">My Account <span class="pure-custom-caret"></span></a>
+              <a href="#" data-toggle="dropdown">Account <span class="pure-custom-caret"></span></a>
               <ul class="pure-menu-children">
                 <li><%= link_to "Profile", profile_path %></li>
                 <li><%= link_to "Edit", edit_user_registration_path %></li>
@@ -20,7 +21,11 @@
                 </li>
               </ul>
               <% if current_user.admin? %>
+                <li class="pure-menu-custom-separator-vertical"</li>
                 <li class="admin-header">ADMIN ACCOUNT (<%= current_user.name_first %>)</li>
+              <% else %>
+                <li class="pure-menu-custom-separator-vertical"</li>
+                <li class="standard-user-header">Standard Account (<%= current_user.name_first %>)</li>
               <% end %>
             </li>
           <% else %>
