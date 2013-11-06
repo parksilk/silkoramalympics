@@ -139,6 +139,15 @@ body {
 
 }
 
+.alert-warning {
+  // ex: when signed out successfully
+  color: #FF0000; // red
+  border: 1px solid #F00; // red
+  border-radius: 5px;
+  padding: 10px 0;
+
+}
+
 // FORMS //
 
 .simple_form label {
