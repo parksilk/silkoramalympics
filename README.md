@@ -1,3 +1,3 @@
 # Silkoramalympics
 
-### This project is to build a website for my family members to use for our annual Silkoramalympics competition.
+### This webapp is for my family members to use for our semi-annual Silkoramalympics reunion/camping trip/athletic competition. It's built using Rails and the Pure CSS library from Yahoo.
